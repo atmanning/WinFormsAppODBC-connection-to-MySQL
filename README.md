@@ -1,3 +1,5 @@
+This example VB to ODBC app was created under Visual Studio Community 2025 on Windows 11
+
 Having general knowledge of MySQL databases and VB, I knew there was a way to connect and display the contents of a table.
 The table resides in a remote MariaDB database which I set up in a Docker container running MariaDB under Ubuntu Linux
 The MySQL ODBC driver is also needed along with the northwind database created and populated
