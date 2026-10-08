@@ -3,9 +3,13 @@ The table resides in a remote MariaDB database which I set up in a Docker contai
 The MySQL ODBC driver is also needed along with the northwind database created and populated
 
 The first button simply dumps the contents of the NorthWind Customers table.  Easy!
+The second button attempts to run a query entered by the user, with proper exception handling
+  It has not been fully tested for all exceptions, but it stopped hard crashing due to typo's in the table name, for example
 
 I added the ability to write my own queries and display the results.
-It wasn't too hard to modify that code to update the table after editing the dataGrid control, which was new to me
+It wasn't too hard to modify that code to also update the table after editing the dataGrid control, which was new to me
+The Save Edits button does the work for that once the odbc adapter is properly configured - nice!
+It does require that the table to be edited contain a primary key!
 
 
 Acknowledgements:
